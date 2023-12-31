@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressive Smile Dental Clinic - Contact</title>
+    <style>
+        /* (Your existing styles) */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            /* (Your existing styles) */
+            animation: fadeInUp 1s ease-out; /* Header animation */
+        }
+
+        nav a {
+            /* (Your existing styles) */
+            opacity: 0; /* Start with opacity set to 0 */
+            animation: fadeIn 1s ease-out forwards; /* Nav links fade-in animation */
+        }
+
+        footer marquee {
+            /* (Your existing styles) */
+            animation: bounce 1s infinite; /* Footer text bounce animation */
+        }
+        main {
+            padding: 2em;
+            animation: fadeInUp 1s ease-out; /* Main content fade-in animation */
+        }
+
+        h1, p, h2, h4 {
+            opacity: 0; /* Start with opacity set to 0 */
+            animation: fadeIn 1s ease-out forwards; /* Main text fade-in animation */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            font-size:0.6em;
+            margin:1em;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #42a5f5;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+            width: 100%;
+        }
+        main {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6em;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+        }
+
+        marquee {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+        }
+        body {
+            /* Add a background image for the contact page */
+            background: url('background-image.jpg') center center fixed;
+            background-size: cover;
+            background-color: #1a1a1a;
+        }
+
+        main {
+            padding: 2em;
+            animation: fadeInUp 1s ease-out; /* Main content fade-in animation */
+        }
+
+        h1, p {
+            opacity: 0; /* Start with opacity set to 0 */
+            animation: fadeIn 1s ease-out forwards; /* Main text fade-in animation */
+        }
+
+        .contact-info {
+            /* Style the contact information */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="query.html">Queries</a>
+            <a href="appointment.html">Book an Appointment</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-decoration: underline;">Contact Us</h1>
+        <p style="color: aliceblue;">Got questions or want to schedule an appointment? Reach out to us!</p>
+
+        <div class="contact-info">
+            <div>Email: <a href="mailto:neetu.abhi17@gmail.com">impressivesmilemultispeciality@gmail.com</a></div>
+            <div>Phone: +91 9980020321</div>
+        </div>
+    </main>
+
+    <footer>
+        <marquee behavior="scroll" direction="left">Visit us at HSR Layout, Bangalore, and get that dazzling smile you deserve!</marquee>
+    </footer>
+</body>
+</html>
