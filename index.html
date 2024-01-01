@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressive Smile Dental Clinic</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -175,6 +174,48 @@
             color: #3498db;
             padding: 1em;
         }
+        .cards .card {
+            height: auto;
+            width: 1400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: all .3s ease-in-out;
+            position: relative;
+            text-align: center;
+            padding: 10px 10px;
+            background: #1D1E28;
+            border-radius: 22px !important;
+            border: 8px solid #fafafa;
+            color: #fff;
+            box-sizing: border-box;
+            align-items: center;
+            align-content: center;
+        }
+
+        .card:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .card .card-content {
+            bottom: 0;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -191,23 +232,29 @@
     <main>
         <h1 style="text-decoration: underline;">Impressive Smile Dental Clinic</h1>
         <p style="color:aliceblue">"At Impressive Smile Dental Clinic, our commitment to your well-being extends beyond exceptional dental care. Our inviting atmosphere and friendly staff aim to make your visits enjoyable. With a focus on preventive measures, we guide you towards maintaining a healthy, radiant smile. Our emphasis on patient education ensures you have the knowledge to prioritize your oral health daily. Trust us for a seamless blend of expertise and personalized care, creating a dental experience that goes beyond expectations.</p>
-        <h2 style="color:#3498db; text-align: left; text-decoration: underline;">About the Doctor</h2>
-        <h4 style="color:#fff">BDS
-            Dentist,Dental Surgeon,Cosmetic/Aesthetic Dentist
-            12 Years Experience Overall  (10 years as specialist)</h4>
-        <div style="float: right; margin: 0 5px 10px 0;"> <!-- Adjusted margin -->
-            <img src="madhulika.jpg" alt="Doctor Image" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
-        </div>
-            
-        <p>Dr. Madhulika Singh is a dentist in HSR layout, Bangalore and has an experience of 13 years in this field. Dr. Madhulika Singh practices at Impressive Smile Multi Speciality Dental Clinic in HSR Layout, Bangalore.
+        <center><div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <h2 style="color:#3498db; text-align: left; text-decoration: underline;">About the Doctor</h2>
+                    <h4 style="color:#fff">BDS
+                    Dentist,Dental Surgeon,Cosmetic/Aesthetic Dentist
+                    12 Years Experience Overall  (10 years as specialist)</h4>
+                    <div style="float: right; margin: 0 5px 10px 0;"> <!-- Adjusted margin -->
+                    <img src="madhulika.jpg" alt="Doctor Image" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+                    <p>Dr. Madhulika Singh is a dentist in HSR layout, Bangalore and has an experience of 13 years in this field. Dr. Madhulika Singh practices at Impressive Smile Multi Speciality Dental Clinic in HSR Layout, Bangalore.
 
-            Being so passionate about dentistry, Dr Madhulika Singh started Impressive Smile Multi Speciality Dental Clinic in HSR Layout, Bangalore in 2016. She has completed her BSC with honours and bachelor in Dental Surgery from MPDC. She had worked with Dental Care Center, HSR Layout Bangalore for 5 years and worked with Dental Solutions Lucknow for 1 year.
+                        Being so passionate about dentistry, Dr Madhulika Singh started Impressive Smile Multi Speciality Dental Clinic in HSR Layout, Bangalore in 2016. She has completed her BSC with honours and bachelor in Dental Surgery from MPDC. She had worked with Dental Care Center, HSR Layout Bangalore for 5 years and worked with Dental Solutions Lucknow for 1 year.
+                        
+                        Dr. Madhulika uses her skill and experience with the latest technology to achieve the healthiest and most beautiful smiles for her patients. She is so patient and caring and completely commited for her patients. She offers a complete range of services beginning with oral hygiene. She believes that the health of mouth has direct impact on well being of entire body. She stops problem before they take over your reason to keep smiling. She works towards preventing and protecting you against health complications caused by dental decay and disease.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </center>
             
-            Dr. Madhulika uses her skill and experience with the latest technology to achieve the healthiest and most beautiful smiles for her patients. She is so patient and caring and completely commited for her patients. She offers a complete range of services beginning with oral hygiene. She believes that the health of mouth has direct impact on well being of entire body. She stops problem before they take over your reason to keep smiling. She works towards preventing and protecting you against health complications caused by dental decay and disease.</p>
+        
     </main>
 
-    <footer>
     <marquee behavior="scroll" direction="left">Visit us at HSR Layout, Bangalore, and get that dazzling smile you deserve!</marquee>
-    </footer>
 </body>
 </html>
