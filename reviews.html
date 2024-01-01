@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        nav a {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            font-size: 0.6em;
+            margin: 1em;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #42a5f5;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+            width: 100%;
+        }
+
+        main {
+            padding: 2em;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        h1,
+        p,
+        h2,
+        h4 {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            font-size: 0.6em;
+            margin: 1em;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #42a5f5;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+            width: 100%;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6em;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: bounce 1s infinite;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+        }
+
+        marquee {
+            background-color: #1a1a1a;
+            color: #3498db;
+            padding: 1em;
+        }
+
+        .cards .card {
+            height: auto;
+            width: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: all .3s ease-in-out;
+            position: relative;
+            text-align: center;
+            padding: 10px 10px;
+            background: #1D1E28;
+            border-radius: 22px !important;
+            border: 8px solid #fafafa;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .card:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .card .card-content {
+            bottom: 0;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="appointment.html">Book an Appointment</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="query.html">Queries</a>
+            <a href="map.html">Location</a>
+        </nav>
+    </header>
+    <section id="products">
+        <div class="container">
+            <h2>Our Reviews</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="text-align: left;">Avijeet M <span class="stars">★★★★★</span></h3>
+                        <p>Dr. Madhulika is very gentle, patient and caring in her practice. She focuses on the issue
+                            more rather than time & money. I went for a post rct crown fitting on a broken molar teeth.
+                            It was a super complex case, but she handled it with ease. I will definitely recommend her
+                            clinic over other big brand names out there.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="text-align: left;">Disha A <span class="stars">★★★★★</span></h3>
+                        <p>She is a well read Dentist, in her 1st visit she gave so much of information on oral health and very soft spoken.... thanks to Dr Madhulika finally I was able to overcome one of my biggest fears of life...( visiting a dentist) But after my few visits I understand that she is not like the other money minting guys neither is she harsh on her clients. Very reasonable and best part was she is very gentle with her patients. Not just me my 8 year old kid is also looking forward to see her :) I will surely recommend Dr Madhulika as one of the experienced and best Dentist in town Hsr area.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="text-align: left;">Akanksha khan <span class="stars">★★★★★</span></h3>
+                        <p>I am very happy on my first visit..She gave me a lot of information on wisdom teeth and everything related to tooth care and her recommended medication works so good..very soft spoken and knowledgeable.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="text-align: left;">Shipra Goyal<span class="stars">★★★★★</span></h3>
+                        <p>Very nice experience with the dentist. She understands the problem first, and then discusses the solution before going ahead with any procedure. Would definitely recommend to all.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="text-align: left;">Vaisakh Menon<span class="stars">★★★★★</span></h3>
+                        <p>Thank you so much for providing such a wonderful service! The doctor was very friendly and provided me with an exceptional experience</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 style="text-align: left;">Sweety Jain<span class="stars">★★★★★</span></h3>
+                        <p>Doctor is so soft spoken and did the procedure very nicely... Highly recommended...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
