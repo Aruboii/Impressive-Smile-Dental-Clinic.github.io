@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Awesome Map</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #3498db;
+      padding: 1em;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      transition: transform 0.3s ease;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+      font-size: 0.6em;
+      margin: 1em;
+    }
+
+    nav a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #42a5f5;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover:after {
+      transform: scaleX(1);
+      transform-origin: left;
+      width: 100%;
+    }
+
+    main {
+      margin-top: 80px;
+      height: 100vh; /* Stretch the main content to fill the viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%; /* Stretch the iframe to fill the main container */
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="contact.html">Contact Us</a>
+      <a href="query.html">Queries</a>
+      <a href="appointment.html">Book an Appointment</a>
+    </nav>
+  </header>
+  <main>
+    <iframe
+      loading="lazy"
+      allowfullscreen
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzEGn65wwUw8srWzWv9EST8ZkbVhM5hsk&q=Impressive Smile Multi Speciality Dental Clinic"
+    ></iframe>
+  </main>
+</body>
+</html>
