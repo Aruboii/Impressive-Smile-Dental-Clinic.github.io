@@ -11,3 +11,5 @@ appointment.html is a page which can be accessed by the navigation panel present
 query.html is a page which can be accessed by the navigation panel present in the top left, this page contains a form which a user can fill out if he/she has any questions or problems and does not want to directly contact the doctor. The form is submitted to us via formspree and we get a message on telegram and a seperate email containing all the details.We then reach back to the patient to confirm his/her appointment and give further information.
 
 madhulika.jpg is a picture of the doctor which we access to show on the home page.
+
+favicon.ico is the favicon image for the website.
